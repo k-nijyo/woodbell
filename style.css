@@ -1,0 +1,536 @@
+@charset "utf-8";
+
+/*
+Theme Name: wood bell furniture
+Description: wood bell furniture official theme
+Author: Maki Moritani
+Version: 1.0
+*/
+
+
+/* clearfix */
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+
+/* all */
+body {
+margin: 0 auto;
+padding: 0;
+}
+
+
+
+/* container */
+#container {
+    width: 1050px;
+    margin: 0 auto;
+    color: #333;
+    font-size: 0.9em;
+    font-family: "KozGoPro-Bold", "小塚ゴシック Pro B", "ヒラギノ丸ゴ ProN W4", "HiraMaruProN-W4",
+    "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+}
+a {
+    color: #808080;
+    text-decoration: none;
+}
+
+
+
+/* header */
+#header {
+    width: 1050px;
+    margin-bottom: 30px;
+}
+#header-box {
+    width: 870px;
+    text-align: center;
+    margin: 30px auto 0;
+    padding-left: 160px;
+}
+#header img {
+    width: 70px;
+    padding-bottom: 15px;
+    margin-left: -10px;
+}
+#header h1 {
+    font-size: 1.1em;
+    letter-spacing: 0.7px;
+}
+#header h1 a {
+    color: #333;
+}
+
+
+
+/* main */
+#main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+/* sidebar */
+#sidebar {
+    float: left;
+    position: fixed;
+    width: 150px;
+    line-height: 1.7;
+    font-size: 1.06em;
+}
+#sidebar ul#menu-nav li {
+    list-style-type: none;
+}
+#sidebar ul#menu-nav li a {
+    color: #333;
+}
+#sidebar-nav img {
+    width: 36px;
+    height: auto;
+    margin-top: 15px;
+}
+#sidebar-nav img.ig-icon {
+    float: left;
+    margin-right: 5px;
+}
+
+
+
+/* contents */
+#contents {
+    float: right;
+    width: 820px;
+    min-height: 350px;
+}
+    /* ↓slide show↓ */
+#contents p#slide-top {
+    width: 800px;
+    height: 567px;
+    position: relative;
+}
+#contents p#slide-top img {
+    width: 800px;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 8;
+    opacity: 0.0;
+}
+#contents p#slide-top img.active {
+    z-index: 10;
+    opacity: 1.0;
+}
+#contents p#slide-top img.last-active {
+    z-index: 9;
+}
+    /* ↑slide show↑ */
+#news-top {
+    margin: 0 auto 50px;
+    line-height: 1.5;
+    font-size: 0.9em;
+}
+#news-top p.heading {
+    font-weight: bold;
+}
+#news-top dl dt {
+    float: left;
+}
+#news-top dt span {
+    margin-right: 10px;
+}
+#news-top a{
+    color: #333;
+}
+#contents-box {
+    width: 800px;
+}
+#contents-box a img {
+    margin-bottom: 20px;
+}
+#contents-box .oddpost {
+    float: left;
+}
+#contents-box .evenpost {
+    float: right;
+}
+
+
+
+
+/* news */
+#news h2 {
+    margin: 0 0 15px;
+}
+/*#news dl {
+    border: 1px solid #666;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}*/
+#news .news-box {
+    padding: 0 20px 10px;
+    margin: 0 auto 10px;
+}
+#news .news-box dt span.cap-left {
+    float: left;
+    margin-right: 20px;
+}
+#news .news-box dt {
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #666;
+    margin-top: 10px;
+}
+#news .news-box dt a {
+    color: #333;
+    font-size: 1.1em;
+}
+#news .content-box {
+    clear: both;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+#news .content-box p a {
+    display: inline-block;
+}
+
+
+
+/* single */
+#contents.s-page #single-box {
+    line-height: 1.5;/* Firefox用 */
+    margin: 0 auto 30px;
+}
+#contents.s-page #single-box .caption-box h2 {
+    display: inline-block;
+    min-width: 100%;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #333;
+    margin: 5px 0 10px;
+}
+#contents.s-page #single-box .caption-box a {
+    color: #333;
+    font-size: 1.2em;
+}
+
+#contents.s-page #single-box dd {
+    border-bottom: 2px dotted #666;
+}
+#contents.s-page dd:last-child {
+    border: none;
+}
+#contents.s-page #single-box img {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+#contents.s-page #single-box .eyecatch {
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 30px;
+}
+#contents.s-page .content-box {
+    clear: both;
+    min-height: 300px;
+    line-height: 1.8;
+    margin: 30px 0;
+}
+#respond {
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 50px;
+}
+#respond h3 {
+    margin-bottom: 10px;
+}
+#comments {
+    margin-top: 60px;
+}
+.comment-meta {
+    margin-bottom: 5px;
+}
+.says,
+.comment-meta a {
+    font-size: 0.8em;
+}
+.reply {
+    font-size: 0.8em;
+    margin: 10px 0 20px;
+}
+
+
+
+
+/* furniture(選択ページ) */
+#furniture .box-row {
+    margin: 0;
+}
+#furniture .fur-box {
+    padding: 0 auto 0 0;
+    margin-bottom: 15px;
+}
+#furniture .fur-box:nth-child(3n+1) {
+    clear: both;
+}
+#furniture .fur-box:nth-child(3n+1),
+#furniture .fur-box:nth-child(3n+2) {
+    float: left;
+    padding-right: 15px;
+}
+#furniture .fur-box:nth-child(3n) {
+    padding-right: 0;
+}
+#furniture .fur-box img {
+    width: 260px;
+    height: auto;
+}
+
+
+
+/* furniture(個別選択ページ) 
+#furniture .box-row-detail {
+    margin: 0 20px 0 0;
+}
+#furniture .fur-box-detail {
+    width: 50%;
+    padding: 0 auto 0 0;
+    margin-bottom: 60px;
+}
+#furniture .fur-box-detail:nth-child(odd) {
+    float: left;
+    text-align: left;
+    margin-left: 0;
+}
+#furniture .fur-box-detail:nth-child(even) {
+    float: right;
+}
+#furniture .fur-box-detail img {
+    float: left;
+    width: 360px;
+}
+#furniture .fur-box-detail:nth-child(even) img {
+    float: right;
+}*/
+
+
+
+/* detail(flexslider) */
+.fur-detail-box {
+    margin-bottom: 50px;
+}
+#carousel li {
+    margin-right: 50px;
+}
+.attachment-full {
+    max-width: 810px;
+    min-width: 0px;
+    max-height: 550px;
+}
+.attachment-midium {
+    max-height: 110px;
+    max-width: 165px;
+}
+.fur-detail-text h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.fur-detail-text p {
+    font-size: 0.95em;
+    line-height: 1.8;
+}
+
+
+
+/* blog */
+#blog {
+    line-height: 1.8;
+}
+#blog .post {
+    width: 800px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #333;
+}
+#blog .post h2 {
+    display: inline-block;
+    min-width: 50%;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #333;
+    margin: 5px 0;
+}
+#blog .post .caption-box p {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+#blog .post h2 a {
+    color: #333;
+}
+#blog .eyecatch {
+    margin: 0 auto 15px;
+}
+#blog .post .entrytext img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+#blog .entrytext {
+    margin-bottom: 50px;
+}
+#blog .post-edit-link {
+    display: inline-block;
+    width: 800px;
+    text-align: right;
+    font-size: 0.75em;
+    margin-bottom: 50px;
+}
+#blog .wp-pagenavi {
+    letter-spacing: 5px;
+    margin-top: 50px;
+}
+#blog .wp-pagenavi .pages {
+    margin-right: 20px;
+}
+#single-box .content-box {
+    margin-bottom: 150px !important;
+}
+
+h3#comments {
+    padding-top: 30px;
+    border-top: solid 1px #333;
+    margin: 10px auto;
+}
+.commentlist {
+    margin: 25px auto;
+}
+form#commentform p {
+    margin-bottom: 5px;
+}
+
+
+
+/* about */
+#about img {
+    width: 800px;
+}
+#about p {
+    margin: 50px auto 10px;
+}
+#about table {
+    border-style: none;
+}
+#about table th,
+#about table td {
+    padding: 5px 20px 10px 0;
+}
+#about table th {
+    text-align: left;
+}
+#about .map {
+    margin-top: 20px;
+}
+#about table:last-child {
+    margin: 80px 0 100px;
+}
+
+
+
+
+/* contact */
+#contact h2 {
+    font-size: 1.2em;
+}
+
+#contact .text-box {
+    line-height: 1.5;
+    margin: 30px 0 50px;
+}
+#contact table {
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+#contact table tr {
+    display: table-row;
+}
+#contact td,
+#contact th {
+    display: table-cell;
+}
+#contact table th {
+    padding: 10px 20px 10px 0;
+}
+#contact table th.ver-mid {
+    vertical-align: middle;
+}
+#contact table td {
+    padding: 10px 20px 10px 0;
+    text-align: left;
+}
+#contact table th span {
+    font-size: 0.8em;
+    color: #ffaa55;
+}
+#contact .sub-cle {
+    position: relative;
+    left: 400px;
+}
+#contact .wpcf7-submit {
+    margin-right: 10px;
+}
+
+
+
+/* footer */
+#footer {
+    clear: both;
+    text-align: center;
+}
+#footer p.copy {
+    padding-top: 10px;
+    margin: 150px auto 20px;
+    border-top: 1px solid #333;
+}
+#footer p small {
+    font-size: 0.8em;
+}
+
+/* ページトップへ戻る */
+.pageTop {
+    position: relative;
+    width: 1050px;
+    height: 0;
+    margin: 0 auto;
+}
+
+.pageTop a {
+    position: fixed;
+    right: 40.2%;
+    bottom: 35px;
+    margin: auto;
+    display: block;
+    padding-bottom: 1em;
+    color: #333;
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 1.2;
+    outline: none;
+    z-index: 9999;
+    border-radius: 3px 3px 0 0;
+}
+.pageTop a span.try-a {
+    font-size: 2em;
+}
